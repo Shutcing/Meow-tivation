@@ -1,0 +1,243 @@
+/*-------ОБНУЛЕНИЕ------------------------------*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: black;
+  font-family: "ABeeZee";
+  overflow-x: hidden;
+}
+
+/*-------Container-------------------------------------------*/
+[class*="__container"] {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+/*----Header-------------------------------------------------------*/
+.header {
+  z-index: 100;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  &__container {
+    padding: 10px;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  &__img {
+    img {
+      max-width: 50px;
+    }
+  }
+
+  &__content {
+    margin-left: 5%;
+    align-self: flex-end;
+  }
+}
+
+/*------Main---------------------------------------------*/
+.main {
+  position: relative;
+  z-index: 20;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.button {
+  cursor: pointer;
+  margin: 30% auto;
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+/*--------EX--------------------------------------*/
+.ex {
+  font-family: "Montserrat";
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 250px;
+    img {
+      max-width: 280px;
+      max-height: 212px;
+    }
+  }
+
+  &__text {
+    height: 75px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    background-color: white;
+  }
+}
+
+/*------Timer------------------------------------------*/
+.timer {
+  padding-top: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  &__buttons {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 45%;
+    }
+  }
+
+  display: none;
+}
+
+.timer__buttons__left {
+  img {
+    transform: rotate(180deg);
+  }
+}
+.timer__buttons__right {
+  display: flex;
+  justify-content: end;
+}
+
+.start_button {
+  width: 35%;
+  height: 35%;
+  padding: 5%;
+  font-size: 40px;
+}
+
+/*------Descr-------------------------------------------*/
+.descr {
+  &__container {
+  }
+
+  &__button {
+  }
+
+  &__text {
+  }
+}
+
+/*---Count-----------------------------------------------*/
+.count {
+  padding-top: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+    display: flex;
+    align-items: center; /* This will vertically center your text */
+    justify-content: center; /* This will horizontally center your text */
+    text-align: center; /* This will align the text center if it breaks into multiple lines */
+    font-size: 80px;
+  }
+
+  &__buttons {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 45%;
+    }
+  }
+}
+
+.count__buttons__left {
+  img {
+    transform: rotate(180deg);
+  }
+}
+.count__buttons__right {
+  display: flex;
+  justify-content: end;
+}
+
+/*-----Back-----------------------------------------*/
+.background {
+  position: absolute;
+  z-index: 1;
+  img {
+    max-width: 100%;
+  }
+}
+
+.background_ex {
+  margin-top: 110%;
+  img {
+    transform: rotate(180deg); /* Add this line */
+  }
+}
+
+/*-----------------------------------------------------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -200px;
+  width: 100%;
+  min-height: 500px; /* Adjust if you have a specific height in mind */
+  background-color: #82aedb;
+}
